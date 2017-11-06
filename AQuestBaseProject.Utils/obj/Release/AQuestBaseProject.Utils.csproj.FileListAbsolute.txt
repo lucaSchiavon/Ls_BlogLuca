@@ -1,0 +1,13 @@
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\AQuestBaseProject.Utils.dll
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\AQuestBaseProject.Utils.pdb
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\Newtonsoft.Json.dll
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\PigeonCms.Core.dll
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\Dapper.dll
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\PigeonCms.Core.Offline.dll
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\PigeonCms.Core.pdb
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\Newtonsoft.Json.xml
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\Dapper.xml
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\bin\Release\PigeonCms.Core.Offline.pdb
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\obj\Release\AQuestBaseProject.Utils.csprojResolveAssemblyReference.cache
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\obj\Release\AQuestBaseProject.Utils.dll
+C:\GIT\fornobonomi_pigeon\AQuestBaseProject.Utils\obj\Release\AQuestBaseProject.Utils.pdb

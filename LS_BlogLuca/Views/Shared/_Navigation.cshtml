@@ -1,0 +1,43 @@
+﻿@model LS_BlogLuca.Models.NavigationViewModel
+@using AQuestBaseProject.Web.Helpers
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@UrlsHelper.GetHomeUrl(Model.CurrentLangCode)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@UrlsHelper.GetAboutUrl(Model.CurrentLangCode)">About</a>
+                    </li>
+                    @*<li class="nav-item">
+                        <a class="nav-link" href="post.html">Sample Post</a>
+                    </li>*@
+                    <li class="nav-item">
+                        <a class="nav-link" href="@UrlsHelper.GetContactUrl(Model.CurrentLangCode)">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding:20px 5px" href='@UrlsHelper.GetHomeUrl("it")'>IT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding:20px 5px" href="#">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="padding:20px 5px" href='@UrlsHelper.GetHomeUrl("en")'>EN</a>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="collapse navbar-collapse" style="font-size: 12px;font-weight: 800;letter-spacing: 1px;text-transform: uppercase;color:white" id="languageResponsive"><a class="nav-link" href="#">IT</a>&nbsp|&nbsp<a  class="nav-link" href="#">EN</a></div>-->
+        </div>
+    </nav>
+
+
