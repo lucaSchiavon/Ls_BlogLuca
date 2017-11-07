@@ -24,7 +24,8 @@ namespace LS_BlogLuca
             name: "Home_Localized",
             url: "{lang}/Home",
             defaults: new { controller = "Home", action = "Index" },
-            constraints: new { lang = "it|en" }
+            constraints: new { lang = "it|en" },
+             namespaces: new string[] { "LS_BlogLuca.Controllers" }
         );
 
             routes.MapRoute(
@@ -37,7 +38,8 @@ namespace LS_BlogLuca
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                   namespaces: new string[] { "LS_BlogLuca.Controllers" }
             );
 
           
