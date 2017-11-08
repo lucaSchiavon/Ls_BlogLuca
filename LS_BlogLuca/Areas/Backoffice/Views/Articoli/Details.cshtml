@@ -1,0 +1,83 @@
+﻿@model LS_BlogLuca.EF.Articoli
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Backoffice/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Articoli</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categorie.Categoria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorie.Categoria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titolo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titolo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titolo_en)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titolo_en)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contenuti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contenuti)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contenuti_en)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contenuti_en)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Attivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataInserimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataInserimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdArticolo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

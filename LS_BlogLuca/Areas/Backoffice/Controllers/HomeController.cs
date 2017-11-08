@@ -11,7 +11,23 @@ namespace LS_BlogLuca.Areas.Backoffice.Controllers
         // GET: Backoffice/Login
         public ActionResult Index()
         {
-            return View();
+            if (Session["UserId"] == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+            else
+            {
+                return View();
+            }
+
+           
+        }
+
+        public ActionResult LogOut()
+        {
+            Session["UserId"] = null;
+            return RedirectToAction("Index", "Login");
+           
         }
     }
 }

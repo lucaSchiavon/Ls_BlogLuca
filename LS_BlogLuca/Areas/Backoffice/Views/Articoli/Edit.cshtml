@@ -1,0 +1,117 @@
+﻿@model LS_BlogLuca.EF.Articoli
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Backoffice/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Articolo</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                   @if (Model.IdArticolo == 0)
+                   {<text>Inserisci l'articolo...</text> }
+                   else
+                   { <text>Modifica articolo...</text> }
+                      
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            @*<form role="form">*@
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        @Html.HiddenFor(model => model.IdArticolo)
+                                <div class="form-group">
+                                   
+                                        <label>Categoria</label>
+                                        @*<select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>*@
+
+                                        @Html.DropDownList("IdCategoria", null, htmlAttributes: new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.IdCategoria, "", new { @class = "text-danger" })
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label>Titolo</label>
+                                    @*<input class="form-control">*@
+                                    @Html.EditorFor(model => model.Titolo, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Titolo, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Titolo EN</label>
+                                    @*<input class="form-control">*@
+                                    @Html.EditorFor(model => model.Titolo_en, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Titolo_en, "", new { @class = "text-danger" })
+
+                                </div>
+                                <div class="form-group">
+                                    <label>Contenuti</label>
+                                  
+                                    @Html.ValidationMessageFor(model => model.Contenuti, "", new { @class = "text-danger" })
+
+                                    @Html.TextAreaFor(model => model.Contenuti, new { @class = "form-control", rows="30" } )
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label>Contenuti EN</label>
+                                    @Html.ValidationMessageFor(model => Model.Contenuti_en, "", new { @class = "text-danger" })
+
+                                    @Html.TextAreaFor(Model => Model.Contenuti_en, new { @class = "form-control", rows = "30" })
+                                    @*<textarea class="form-control" rows="3"></textarea>*@
+                                    @*@Html.EditorFor(model => model.Contenuti_en, new { htmlAttributes = new { @class = "form-control" , rows="3"} })*@
+
+                                    @*<textarea class="form-control"  rows="30">@Model.Contenuti_en</textarea>*@
+                                    @*@Html.ValidationMessageFor(model => model.Contenuti_en, "", new { @class = "text-danger" })*@
+                                </div>
+                                <div class="form-group">
+                                    <label>Attivo</label>
+                                    @*<select class="form-control">
+                                        <option>SI</option>
+                                        <option>NO</option>
+                                    </select>*@
+                                    @*@Html.LabelFor(model => model.Attivo, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                                    @*<div class="col-md-10">*@
+                                        <div class="checkbox">
+                                            @Html.EditorFor(model => model.Attivo, new { htmlAttributes= new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Attivo, "", new { @class = "text-danger" })
+                                        @*</div>*@
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tags</label>
+                                    @*<input class="form-control">*@
+                                    @Html.EditorFor(model => model.Tags, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Tags, "", new { @class = "text-danger" })
+                                    @*<p class="help-block">Example block-level help text here.</p>*@
+                                </div>
+                                if (Model.IdArticolo == 0)
+                                {
+                                    <button type="submit" value="Create2" class="btn btn-primary"><i class="fa fa-pencil"></i>&nbsp&nbspInserisci</button>
+                                }
+                                else
+                                {
+                                    <button type="submit" value="Save" class="btn btn-primary"><i class="fa fa-pencil"></i>&nbsp&nbspSalva</button>}
+
+                                @*<button type="submit" value="Save"  class="btn btn-primary"><i class="fa fa-pencil"></i>&nbsp&nbspSalva</button>*@
+                                }
+                            @*</form>*@
+                        </div>

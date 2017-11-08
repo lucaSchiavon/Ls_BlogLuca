@@ -50,3 +50,10 @@ D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\LS_BlogLuca\AQuestBaseProject.Ut
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\LS_BlogLuca\AQuestBaseProject.Utils\obj\Debug\AQuestBaseProject.Utils.csprojResolveAssemblyReference.cache
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\LS_BlogLuca\AQuestBaseProject.Utils\obj\Debug\AQuestBaseProject.Utils.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\LS_BlogLuca\AQuestBaseProject.Utils\obj\Debug\AQuestBaseProject.Utils.pdb
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\AQuestBaseProject.Utils\bin\Debug\AQuestBaseProject.Utils.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\AQuestBaseProject.Utils\bin\Debug\AQuestBaseProject.Utils.pdb
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\AQuestBaseProject.Utils\bin\Debug\Newtonsoft.Json.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\AQuestBaseProject.Utils\bin\Debug\Newtonsoft.Json.xml
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\AQuestBaseProject.Utils\obj\Debug\AQuestBaseProject.Utils.csprojResolveAssemblyReference.cache
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\AQuestBaseProject.Utils\obj\Debug\AQuestBaseProject.Utils.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\AQuestBaseProject.Utils\obj\Debug\AQuestBaseProject.Utils.pdb

@@ -57,6 +57,8 @@ D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\LS_BlogLuca.pdb
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\Antlr3.Runtime.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\AQuestBaseProject.Utils.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\EntityFramework.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\EntityFramework.SqlServer.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\Microsoft.Web.Infrastructure.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\Newtonsoft.Json.dll
@@ -69,6 +71,8 @@ D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\System.Web.WebPages.Razor.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\WebGrease.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\AQuestBaseProject.Utils.pdb
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\EntityFramework.xml
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\EntityFramework.SqlServer.xml
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\System.Web.Helpers.xml
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\System.Web.Mvc.xml
@@ -79,6 +83,7 @@ D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\System.Web.WebPages.Razor.xml
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\Antlr3.Runtime.pdb
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\Newtonsoft.Json.xml
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\EntityFramework.resources.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\obj\Debug\LS_BlogLuca.csprojResolveAssemblyReference.cache
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\obj\Debug\LS_BlogLuca.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\obj\Debug\LS_BlogLuca.pdb

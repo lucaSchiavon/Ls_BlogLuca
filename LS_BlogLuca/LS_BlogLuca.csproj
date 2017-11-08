@@ -44,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -52,6 +58,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,16 +129,24 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Backoffice\BackofficeAreaRegistration.cs" />
+    <Compile Include="Areas\Backoffice\Controllers\ArticoliController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\HomeController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Backoffice\Models\UtenteViewModel.cs" />
+    <Compile Include="Code\Entities\Articoli.cs" />
+    <Compile Include="Code\Entities\ArticoliCorrelati.cs" />
+    <Compile Include="Code\Entities\Categorie.cs" />
+    <Compile Include="Code\Entities\Contatti.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Code\Entities\Etichette.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\UrlsHelper.cs" />
+    <Compile Include="Code\ModelLucaBlog.cs" />
     <Compile Include="Models\About\IndexViewModel.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\Contact\ContactViewModel.cs" />
@@ -139,7 +155,11 @@
     <Compile Include="Models\Home\IndexViewModel.cs" />
     <Compile Include="Models\LangViewModel.cs" />
     <Compile Include="Models\NavigationViewModel.cs" />
+    <Compile Include="Code\Entities\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Code\Entities\Utenti.cs" />
+    <Compile Include="Code\Entities\UtentiRegistrati.cs" />
+    <Compile Include="Code\Entities\Visite.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Backoffice\data\flot-data.js" />
@@ -328,6 +348,11 @@
     <Content Include="Areas\Backoffice\vendor\font-awesome\scss\_variables.scss" />
     <Content Include="Areas\Backoffice\Views\Shared\_LoginLayout.cshtml" />
     <Content Include="Areas\Backoffice\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Articoli\Create.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Articoli\Delete.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Articoli\Details.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Articoli\Edit.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Articoli\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -419,7 +444,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Backoffice\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
