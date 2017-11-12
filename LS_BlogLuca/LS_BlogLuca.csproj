@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Backoffice\BackofficeAreaRegistration.cs" />
     <Compile Include="Areas\Backoffice\Controllers\ArticoliController.cs" />
+    <Compile Include="Areas\Backoffice\Controllers\CategorieController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\HomeController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\LoginController.cs" />
     <Compile Include="Areas\Backoffice\Models\UtenteViewModel.cs" />
@@ -353,6 +354,8 @@
     <Content Include="Areas\Backoffice\Views\Articoli\Details.cshtml" />
     <Content Include="Areas\Backoffice\Views\Articoli\Edit.cshtml" />
     <Content Include="Areas\Backoffice\Views\Articoli\Index.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Categorie\Edit.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Categorie\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -444,6 +447,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Backoffice\vendor\tinymce\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

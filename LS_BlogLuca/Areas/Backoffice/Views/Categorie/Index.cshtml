@@ -1,0 +1,62 @@
+﻿@model IEnumerable<LS_BlogLuca.EF.Categorie>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Backoffice/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Categorie</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Elenco...
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div style="padding-bottom:10px">
+                        <a href="/Backoffice/Categorie/Create/"><div class="btn btn-primary"><i class="fa fa-pencil"></i>&nbsp&nbspNuovo</div></a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Categoria</th>
+                                    <th>Categoria EN</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td><a href=@string.Concat("/Backoffice/Categorie/Edit/", item.IdCategoria)>@Html.DisplayFor(modelItem => item.Categoria)</a></td>
+                                        <td>@Html.DisplayFor(modelItem => item.Categoria_en)</td>
+                                        <td style="width:50px"><a href=@string.Concat("/Backoffice/Articoli/DeleteDirect/", item.IdCategoria)><div class="btn btn-primary"><i class="fa fa-times"></i></div></a></td>
+                                    </tr>
+                                }
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+
+</div>
+
+

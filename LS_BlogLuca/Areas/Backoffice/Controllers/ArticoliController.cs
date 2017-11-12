@@ -21,51 +21,34 @@ namespace LS_BlogLuca.Areas.Backoffice.Controllers
             return View(articoli.ToList());
         }
 
-        // GET: Backoffice/Articoli/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Articoli articoli = db.Articoli.Find(id);
-            if (articoli == null)
-            {
-                return HttpNotFound();
-            }
-            return View(articoli);
-        }
+        //// GET: Backoffice/Articoli/Details/5
+        //public ActionResult Details(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    Articoli articoli = db.Articoli.Find(id);
+        //    if (articoli == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View(articoli);
+        //}
 
-        // GET: Backoffice/Articoli/Create
+        //// GET: Backoffice/Articoli/Create
+        //public ActionResult Create()
+        //{
+        //    ViewBag.IdCategoria = new SelectList(db.Categorie, "IdCategoria", "Categoria");
+        //    return View();
+        //}
+
         public ActionResult Create()
-        {
-            ViewBag.IdCategoria = new SelectList(db.Categorie, "IdCategoria", "Categoria");
-            return View();
-        }
-
-        public ActionResult Create2()
         {
             ViewBag.IdCategoria = new SelectList(db.Categorie, "IdCategoria", "Categoria");
             Articoli ObjArticoli = new Articoli();
             return View("Edit", ObjArticoli);
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create2([Bind(Include = "IdArticolo,IdCategoria,Titolo,Titolo_en,Contenuti,Contenuti_en,Attivo,DataInserimento,Tags")] Articoli articoli)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Articoli.Add(articoli);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            ViewBag.IdCategoria = new SelectList(db.Categorie, "IdCategoria", "Categoria", articoli.IdCategoria);
-            return View(articoli);
-        }
-        // POST: Backoffice/Articoli/Create
-        // Per proteggere da attacchi di overposting, abilitare le proprietà a cui eseguire il binding. 
-        // Per ulteriori dettagli, vedere https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "IdArticolo,IdCategoria,Titolo,Titolo_en,Contenuti,Contenuti_en,Attivo,DataInserimento,Tags")] Articoli articoli)
@@ -80,6 +63,23 @@ namespace LS_BlogLuca.Areas.Backoffice.Controllers
             ViewBag.IdCategoria = new SelectList(db.Categorie, "IdCategoria", "Categoria", articoli.IdCategoria);
             return View(articoli);
         }
+        //// POST: Backoffice/Articoli/Create
+        //// Per proteggere da attacchi di overposting, abilitare le proprietà a cui eseguire il binding. 
+        //// Per ulteriori dettagli, vedere https://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create([Bind(Include = "IdArticolo,IdCategoria,Titolo,Titolo_en,Contenuti,Contenuti_en,Attivo,DataInserimento,Tags")] Articoli articoli)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Articoli.Add(articoli);
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    ViewBag.IdCategoria = new SelectList(db.Categorie, "IdCategoria", "Categoria", articoli.IdCategoria);
+        //    return View(articoli);
+        //}
 
         // GET: Backoffice/Articoli/Edit/5
         //[ValidateInput(false)]
@@ -115,38 +115,38 @@ namespace LS_BlogLuca.Areas.Backoffice.Controllers
             return View(articoli);
         }
 
-        // GET: Backoffice/Articoli/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Articoli articoli = db.Articoli.Find(id);
-            if (articoli == null)
-            {
-                return HttpNotFound();
-            }
-            return View(articoli);
-        }
+        //// GET: Backoffice/Articoli/Delete/5
+        //public ActionResult Delete(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    Articoli articoli = db.Articoli.Find(id);
+        //    if (articoli == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+        //    return View(articoli);
+        //}
 
-        // POST: Backoffice/Articoli/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            Articoli articoli = db.Articoli.Find(id);
-            db.Articoli.Remove(articoli);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
+        //// POST: Backoffice/Articoli/Delete/5
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult DeleteConfirmed(int id)
+        //{
+        //    Articoli articoli = db.Articoli.Find(id);
+        //    db.Articoli.Remove(articoli);
+        //    db.SaveChanges();
+        //    return RedirectToAction("Index");
+        //}
 
         // POST: Backoffice/Articoli/Delete/5
       
         public ActionResult DeleteDirect(int id)
         {
-            Articoli articoli = db.Articoli.Find(id);
-            db.Articoli.Remove(articoli);
+            Categorie categorie = db.Categorie.Find(id);
+            db.Categorie.Remove(categorie);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

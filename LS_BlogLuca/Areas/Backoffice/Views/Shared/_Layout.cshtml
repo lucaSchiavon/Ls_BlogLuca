@@ -23,6 +23,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="/Areas/Backoffice/vendor/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector: 'textarea', plugins: 'code' });</script>
 </head>
 <body>
     <div id="wrapper">
@@ -271,10 +273,10 @@
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Categorie<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Nuova</a>
+                                    <a href="/Backoffice/Categorie/">Lista</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Modifica</a>
+                                    <a href="/Backoffice/Categorie/Create">Nuova</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -283,10 +285,10 @@
                             <a href="#"><i class="fa fa-edit fa-fw"></i> Articoli<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="flot.html">Nuovo</a>
+                                    <a href="/Backoffice/Articoli/">Elenco</a>
                                 @*</li>*@
                                 <li>
-                                    <a href="morris.html">Modifica</a>
+                                    <a href="/Backoffice/Articoli/Create/">Nuovo</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
