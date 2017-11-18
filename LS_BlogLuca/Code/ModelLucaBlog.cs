@@ -21,6 +21,7 @@ namespace LS_BlogLuca.EF
         public virtual DbSet<Utenti> Utenti { get; set; }
         public virtual DbSet<UtentiRegistrati> UtentiRegistrati { get; set; }
         public virtual DbSet<Visite> Visite { get; set; }
+        public virtual DbSet<About> About { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

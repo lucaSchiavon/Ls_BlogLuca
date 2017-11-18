@@ -1,0 +1,64 @@
+﻿@model IEnumerable<LS_BlogLuca.EF.Etichette>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Backoffice/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Etichette</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Elenco...
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div style="padding-bottom:10px">
+                        <a href="/Backoffice/Etichette/Create/"><div class="btn btn-primary"><i class="fa fa-pencil"></i>&nbsp&nbspNuova</div></a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Chiave</th>
+                                    <th>Valore</th>
+                                    <th>Valore EN</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td><a href=@string.Concat("/Backoffice/Etichette/Edit/", item.IdEtichetta)>@Html.DisplayFor(modelItem => item.Chiave)</a></td>
+                                        <td>@Html.DisplayFor(modelItem => item.Valore)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Valore_en)</td>
+                                        <td style="width:50px"><a href=@string.Concat("/Backoffice/Etichette/DeleteDirect/", item.IdEtichetta)><div class="btn btn-primary"><i class="fa fa-times"></i></div></a></td>
+                                    </tr>
+                                }
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+
+</div>
+
+

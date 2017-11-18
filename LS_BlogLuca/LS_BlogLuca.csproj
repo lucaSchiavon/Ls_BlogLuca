@@ -129,11 +129,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Backoffice\BackofficeAreaRegistration.cs" />
+    <Compile Include="Areas\Backoffice\Controllers\AboutController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\ArticoliController.cs" />
+    <Compile Include="Areas\Backoffice\Controllers\EtichetteController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\CategorieController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\HomeController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\LoginController.cs" />
     <Compile Include="Areas\Backoffice\Models\UtenteViewModel.cs" />
+    <Compile Include="Code\Entities\About.cs" />
     <Compile Include="Code\Entities\Articoli.cs" />
     <Compile Include="Code\Entities\ArticoliCorrelati.cs" />
     <Compile Include="Code\Entities\Categorie.cs" />
@@ -356,6 +359,9 @@
     <Content Include="Areas\Backoffice\Views\Articoli\Index.cshtml" />
     <Content Include="Areas\Backoffice\Views\Categorie\Edit.cshtml" />
     <Content Include="Areas\Backoffice\Views\Categorie\Index.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Etichette\Edit.cshtml" />
+    <Content Include="Areas\Backoffice\Views\Etichette\Index.cshtml" />
+    <Content Include="Areas\Backoffice\Views\About\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
