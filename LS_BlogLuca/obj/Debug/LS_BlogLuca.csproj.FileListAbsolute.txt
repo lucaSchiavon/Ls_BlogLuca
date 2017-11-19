@@ -87,3 +87,15 @@ D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\obj\Debug\LS_BlogLuca.csprojResolveAssemblyReference.cache
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\obj\Debug\LS_BlogLuca.dll
 D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\obj\Debug\LS_BlogLuca.pdb
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\LS_BLOGLuca.Entities.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\AQuestBaseProject.Utils.dll.config
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\LS_BLOGLuca.Entities.pdb
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\LS_BLOGLuca.Entities.dll.config
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\EntityFramework.SqlServer.resources.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\System.Web.Helpers.resources.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\System.Web.Mvc.resources.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\System.Web.Optimization.resources.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\System.Web.Razor.resources.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\System.Web.WebPages.resources.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\System.Web.WebPages.Deployment.resources.dll
+D:\L_SCHIAVON_DOCUMENTS\LAVORO\vstudio_projects\GIT\Ls_BlogLuca\LS_BlogLuca\bin\it\System.Web.WebPages.Razor.resources.dll

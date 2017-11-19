@@ -14,10 +14,18 @@ namespace LS_BlogLuca
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+            "Privacy_Admin_Localized",
+            "Backoffice/About/{action}/{id}",
+            new { action = "Edit", id = UrlParameter.Optional },
+            new[] { "LS_BlogLuca.Areas.Backoffice.Controllers" }
+        );
+
+            routes.MapRoute(
              name: "Privacy_Localized",
              url: "{lang}/About",
              defaults: new { controller = "About", action = "Index" },
-             constraints: new { lang = "it|en" }
+             constraints: new { lang = "it|en" },
+             namespaces: new[] { "LS_BlogLuca.Controllers" }
          );
 
             routes.MapRoute(

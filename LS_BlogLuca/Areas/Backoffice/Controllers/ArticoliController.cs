@@ -17,8 +17,10 @@ namespace LS_BlogLuca.Areas.Backoffice.Controllers
         // GET: Backoffice/Articoli
         public ActionResult Index()
         {
+         
             var articoli = db.Articoli.Include(a => a.Categorie);
             return View(articoli.ToList());
+            
         }
 
         //// GET: Backoffice/Articoli/Details/5

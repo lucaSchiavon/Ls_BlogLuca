@@ -136,21 +136,14 @@
     <Compile Include="Areas\Backoffice\Controllers\HomeController.cs" />
     <Compile Include="Areas\Backoffice\Controllers\LoginController.cs" />
     <Compile Include="Areas\Backoffice\Models\UtenteViewModel.cs" />
-    <Compile Include="Code\Entities\About.cs" />
-    <Compile Include="Code\Entities\Articoli.cs" />
-    <Compile Include="Code\Entities\ArticoliCorrelati.cs" />
-    <Compile Include="Code\Entities\Categorie.cs" />
-    <Compile Include="Code\Entities\Contatti.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Code\Entities\Etichette.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helper\UrlsHelper.cs" />
-    <Compile Include="Code\ModelLucaBlog.cs" />
     <Compile Include="Models\About\IndexViewModel.cs" />
     <Compile Include="Models\BaseViewModel.cs" />
     <Compile Include="Models\Contact\ContactViewModel.cs" />
@@ -159,11 +152,7 @@
     <Compile Include="Models\Home\IndexViewModel.cs" />
     <Compile Include="Models\LangViewModel.cs" />
     <Compile Include="Models\NavigationViewModel.cs" />
-    <Compile Include="Code\Entities\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Code\Entities\Utenti.cs" />
-    <Compile Include="Code\Entities\UtentiRegistrati.cs" />
-    <Compile Include="Code\Entities\Visite.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Backoffice\data\flot-data.js" />
@@ -454,6 +443,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Backoffice\vendor\tinymce\" />
+    <Folder Include="Code\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -467,6 +457,10 @@
     <ProjectReference Include="..\AQuestBaseProject.Utils\AQuestBaseProject.Utils.csproj">
       <Project>{dc24afa5-d1f3-4d38-949a-efb4b67169e0}</Project>
       <Name>AQuestBaseProject.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LS_BLOGLuca.Entities\LS_BLOGLuca.Entities.csproj">
+      <Project>{1c8a7e3e-8802-4aec-882a-6e2e8dbd53f7}</Project>
+      <Name>LS_BLOGLuca.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

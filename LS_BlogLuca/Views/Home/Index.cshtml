@@ -1,10 +1,12 @@
 ﻿@model LS_BlogLuca.Models.Home.IndexViewModel
+@using AQuestBaseProject.Utils.Utils;
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-preview">
                 <a href="post.html">
                     <h2 class="post-title">
+                        @TranslationUtils.GetLabel("LS_Home", "Articolo1", "questa è una prova per vedere se funziona",Model.CurrentLangCode)
                         Man must xxx explore, and this is exploration at its greatest
                     </h2>
                     <h3 class="post-subtitle">
